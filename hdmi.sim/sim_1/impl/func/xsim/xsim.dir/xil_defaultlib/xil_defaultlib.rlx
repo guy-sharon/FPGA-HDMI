@@ -1,0 +1,6 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/FPGA/Xilinx/Projects/hdmi/hdmi.sim/sim_1/impl/func/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Xilinx/Projects/hdmi/hdmi.sim/sim_1/impl/func/xsim/top_func_impl.vhd,1635772050,vhdl,,,,clk_div;clk_wiz_0;clk_wiz_0_clk_wiz;hdmi2;timing;tmds_encoder;tmds_encoder_0;tmds_encoder_1;top,,,,,,,,

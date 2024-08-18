@@ -1,0 +1,24 @@
++====================+====================+===================================================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                                               |
++====================+====================+===================================================+
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/audio_timer/clk_out_reg/D   |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/data_g_reg[0]/D                         |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/data_g_reg[1]/D                         |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/data_b_reg[0]/D                         |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/data_b_reg[1]/D                         |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/subs_reg[3][63]/D           |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/opmode_reg[2]/D             |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/data_r_reg[1]/D                         |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/header_reg[26]/D            |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/CTL10_reg[0]/D              |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/audio_sample_valid_reg[1]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/CTL32_reg[0]/D              |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/opmode_reg[1]/D             |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/audio_sample_valid_reg[0]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/pkt_idx_reg[0]/D            |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/pkt_idx_reg[3]/D            |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/pkt_idx_reg[2]/D            |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/audio_send_clk_reg/D        |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/header_reg[0]/D             |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | hdmi_inst/timing_inst/v_var_reg[8]/D              |
++--------------------+--------------------+---------------------------------------------------+

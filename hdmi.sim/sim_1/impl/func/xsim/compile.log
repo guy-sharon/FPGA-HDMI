@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Xilinx/Projects/hdmi/hdmi.sim/sim_1/impl/func/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Xilinx/Projects/hdmi/hdmi.sim/sim_1/impl/func/xsim/top_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_div'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'tmds_encoder'
+INFO: [VRFC 10-3107] analyzing entity 'tmds_encoder_0'
+INFO: [VRFC 10-3107] analyzing entity 'tmds_encoder_1'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-3107] analyzing entity 'timing'
+INFO: [VRFC 10-3107] analyzing entity 'hdmi2'
+INFO: [VRFC 10-3107] analyzing entity 'top'

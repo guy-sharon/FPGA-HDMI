@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../2021.1/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../2021.1/Vivado/2021.1/data/ip/xpm/xpm_VCOMP.vhd,
+dist_mem_gen_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../hdmi.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl,
+glbl.v,Verilog,xil_defaultlib,glbl.v

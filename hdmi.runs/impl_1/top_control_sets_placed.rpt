@@ -1,0 +1,182 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Jul 27 21:01:02 2022
+| Host         : DESKTOP-QT3SDF3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7s25
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   104 |
+|    Minimum number of control sets                        |   104 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   104 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |    44 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    46 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              81 |           43 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             239 |           70 |
+| Yes          | No                    | No                     |             429 |          168 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1214 |          253 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal                |                           Enable Signal                          |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_12Mhz_IBUF_BUFG                       |                                                                  |                                                                  |                1 |              1 |         1.00 |
+|  clk_out_BUFG                              |                                                                  | uart/sync                                                        |                1 |              1 |         1.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/tmds_clk[1]_i_2_n_0                        | hdmi_inst/timing_inst/tmds_clk[1]_i_1_n_0                        |                1 |              2 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        | hdmi_inst/timing_inst/subs[1][62]_i_1_n_0                        |                1 |              2 |         2.00 |
+|  clk_out_BUFG                              |                                                                  |                                                                  |                3 |              4 |         1.33 |
+|  clk_out_BUFG                              | uart/msg_idx[3]_i_1_n_0                                          |                                                                  |                1 |              4 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        | hdmi_inst/timing_inst/subs[0][54]_i_1_n_0                        |                1 |              5 |         5.00 |
+|  note_idx_reg[0]_i_2_n_0                   |                                                                  |                                                                  |                3 |              5 |         1.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/pkt_idx[4]_i_1_n_0                         |                                                                  |                3 |              5 |         1.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        | hdmi_inst/timing_inst/subs[3][54]_i_1_n_0                        |                2 |              6 |         3.00 |
+|  clk_out_BUFG                              | uart/val_reg[6]_i_1_n_0                                          |                                                                  |                2 |              7 |         3.50 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        | hdmi_inst/timing_inst/subs[2][62]_i_1_n_0                        |                1 |              7 |         7.00 |
+|  hdmi_inst/timing_inst/audio_timer/clk_out |                                                                  |                                                                  |                3 |              7 |         2.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0[0]   |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_2[0] |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_3[0]        |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_7[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_4[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_6[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_bufferL[2][7]_i_1_n_0                |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_0[0]        |                                                                  |                5 |              8 |         1.60 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_12[0]       |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/harmony_idx                                | hdmi_inst/timing_inst/audio_timer/SR[0]                          |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/iec_block_idx[7]_i_1_n_0                   |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_4[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_6[0]        |                                                                  |                6 |              8 |         1.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_8[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_bufferL[3][7]_i_1_n_0                |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_bufferL[0][7]_i_1_n_0                |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_bufferL[1][7]_i_1_n_0                |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_6                  |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_10[0]       |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_2[0]        |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_1[0]               |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_8[0] |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_3[0]               |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_5[0]               |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0][0]          |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/E[0]                           |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_5[0]        |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_0[0]        |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_1[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1][0]          |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_4[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_14[0]       |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_2[0]        |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_10[0]       |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_12[0]       |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_4[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_8[0]        |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_6[0]        |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_0[0]        |                                                                  |                2 |              8 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_4[0] |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_6[0] |                                                                  |                5 |              8 |         1.60 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_2[0]        |                                                                  |                4 |              8 |         2.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_1[0]        |                                                                  |                3 |              8 |         2.67 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_5[0]        |                                                                  |                4 |              8 |         2.00 |
+|  buffer_clk                                |                                                                  |                                                                  |                5 |             15 |         3.00 |
+|  clk_out_BUFG                              |                                                                  | uart/sync_cnt[16]_i_1_n_0                                        |                4 |             16 |         4.00 |
+|  note_idx_reg[0]_i_2_n_0                   |                                                                  | hdmi_inst/timing_inst/note_idx[31]_i_1_n_0                       |                8 |             31 |         3.88 |
+|  clk_out_BUFG                              |                                                                  | uart/bit_cnt[31]_i_1_n_0                                         |                8 |             31 |         3.88 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_5[0] | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_6[0] |                5 |             32 |         6.40 |
+|  clk_12Mhz_IBUF_BUFG                       |                                                                  | uart_clk/clear                                                   |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        |                                                                  | hdmi_inst/timing_inst/audio_timer/cnt[0]_i_1_n_0                 |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        |                                                                  | hdmi_inst/timing_inst/note_timer/cnt[0]_i_1__0_n_0               |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_1[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_2[0]        |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        | hdmi_inst/timing_inst/subs[0][55]_i_1_n_0                        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_3[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_4[0]        |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_2[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_1[0]        |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_3[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_4[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_4[0]               | hdmi_inst/timing_inst/audio_timer/clk_out_reg_5[0]               |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_0[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0][0]          |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_11[0]       | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_12[0]       |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_13[0]       | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_14[0]       |                9 |             32 |         3.56 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_0[0]               | hdmi_inst/timing_inst/audio_timer/clk_out_reg_1[0]               |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_3[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_4[0]        |                9 |             32 |         3.56 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_5[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_6[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_7[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_8[0]        |                9 |             32 |         3.56 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_1[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_2[0]        |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/clk_out_reg_2[0]               | hdmi_inst/timing_inst/audio_timer/clk_out_reg_3[0]               |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4][0]          | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_0[0]        |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_3[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_4[0]        |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5][0]          | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_0[0]        |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_1[0] | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_2[0] |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_5[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_6[0]        |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_5[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[4]_6[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_0[0] | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0[0]   |                9 |             32 |         3.56 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_7[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[5]_8[0]        |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_9[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_10[0]       |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_1[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_2[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_6[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[0]_5[0]        |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_3[0] | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_4[0] |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_8[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_7[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_6[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_5[0]        |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_2[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_1[0]        |                6 |             32 |         5.33 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_11[0]       | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_12[0]       |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_9[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_10[0]       |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_7[0] | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[2]_rep__0_8[0] |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_0[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1][0]          |                5 |             32 |         6.40 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_4[0]        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[1]_3[0]        |                8 |             32 |         4.00 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3][0]          | hdmi_inst/timing_inst/audio_timer/harmony_idx_reg[3]_0[0]        |                7 |             32 |         4.57 |
+|  MMCM/inst/clk_out1                        |                                                                  |                                                                  |               28 |             49 |         1.75 |
+|  buffer_clk                                |                                                                  | hdmi_inst/timing_inst/SR[0]                                      |               25 |             64 |         2.56 |
+|  MMCM/inst/clk_out1                        | hdmi_inst/timing_inst/subs[0][63]_i_1_n_0                        |                                                                  |               29 |             69 |         2.38 |
++--------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+--------------+
+
+

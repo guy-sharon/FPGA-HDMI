@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_func_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="383,670.330 ns"></ZoomStartTime>
+      <ZoomEndTime time="383,828.131 ns"></ZoomEndTime>
+      <Cursor1Time time="383,730.330 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/top/pio1" type="logic">
+      <obj_property name="ElementShortName">pio1</obj_property>
+      <obj_property name="ObjectShortName">pio1</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/pio3" type="logic">
+      <obj_property name="ElementShortName">pio3</obj_property>
+      <obj_property name="ObjectShortName">pio3</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/pio5" type="logic">
+      <obj_property name="ElementShortName">pio5</obj_property>
+      <obj_property name="ObjectShortName">pio5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/pio7" type="logic">
+      <obj_property name="ElementShortName">pio7</obj_property>
+      <obj_property name="ObjectShortName">pio7</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/clk_252Mhz" type="logic">
+      <obj_property name="ElementShortName">clk_252Mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_252Mhz</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

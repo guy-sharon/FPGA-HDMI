@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Aug 18 23:20:36 2024
+# Process ID: 15336
+# Current directory: D:/Xilinx/Vivado/2022.1/projects/hdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2696 D:\Xilinx\Vivado\2022.1\projects\hdmi\hdmi.xpr
+# Log file: D:/Xilinx/Vivado/2022.1/projects/hdmi/vivado.log
+# Journal file: D:/Xilinx/Vivado/2022.1/projects/hdmi\vivado.jou
+# Running On: DESKTOP-QT3SDF3, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 12, Host memory: 17078 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/2022.1/projects/hdmi/hdmi.xpr
+update_compile_order -fileset sources_1
